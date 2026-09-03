@@ -17,13 +17,30 @@ This repository has several kinds of guidance. They serve different purposes and
 
 ## `AGENTS.md`: project-wide working rules
 
-`AGENTS.md` is the shared contract for anyone changing the repository, including AI coding agents. It defines the technology stack, required package manager and runtime, standard commands, and other repository-specific constraints.
+`AGENTS.md` is created to be a shared contract for anyone changing the repository, including AI coding agents. It defines the technology stack, required package manager and runtime, standard commands, and other repository-specific constraints.
 
 It is intentionally small and applies across tools. Rules here take precedence over tool-specific workflow conveniences.
 
+How does it differ from a `README.md` file? 
+
+Unlike human-facing READMEs, `AGENTS.md` provides AI coding agents with project-specific instructions, conventions, and operational guidelines it is read continuously by AI tools to enforce consistency. It may contain the following notes:
+
+ - Development Setup: Commands for installing, building, and environment setup.
+ - Coding Conventions: Rules for code style, naming, and file structures.
+ - Testing & CI/CD: Instructions for running tests and verifying code changes.
+ - Commit Guidelines: Formatting rules for commit messages and linting.
+ - Project Guardrails: Custom boundaries, security constraints, and performance rules.
+
 ## `.opencode/`: OpenCode workflow and tooling
 
-`.opencode/` contains configuration, commands, agents, skills, plugins, and checkpoints for OpenCode.
+OpenCode stands out from traditional command line tools for several reasons:
+
+- Integration: OpenCode integrates seamlessly with your existing workflow, reading files, understanding project structure, and maintaining context across commands. 
+- Flexibility: It supports multiple AI models and providers, allowing users to switch based on needs, budget, or privacy requirements. 
+- Versatility: OpenCode works with any language, editor, and environment, making it a flexible choice for developers. 
+- Advanced Features: It offers advanced features like scripting, CI pipelines, and automation, making it suitable for serious work.
+
+The folder `.opencode/` contains configuration, commands, agents, skills, plugins, and checkpoints for OpenCode.
 
 - `commands/` defines repeatable workflows such as `/evaluate`, `/plan`, `/apply`, `/validate`, and `/epav`.
 - `agents/` contains focused review instructions, such as database, deployment, performance, and code review roles.
