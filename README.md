@@ -31,43 +31,6 @@ Unlike human-facing READMEs, `AGENTS.md` provides AI coding agents with project-
  - Commit Guidelines: Formatting rules for commit messages and linting.
  - Project Guardrails: Custom boundaries, security constraints, and performance rules.
 
-## `.opencode/`: OpenCode workflow and tooling
-
-OpenCode stands out from traditional command line tools for several reasons:
-
-- Integration: OpenCode integrates seamlessly with your existing workflow, reading files, understanding project structure, and maintaining context across commands. 
-- Flexibility: It supports multiple AI models and providers, allowing users to switch based on needs, budget, or privacy requirements. 
-- Versatility: OpenCode works with any language, editor, and environment, making it a flexible choice for developers. 
-- Advanced Features: It offers advanced features like scripting, CI pipelines, and automation, making it suitable for serious work.
-
-The folder `.opencode/` contains configuration, commands, agents, skills, plugins, and checkpoints for OpenCode.
-
-- `commands/` defines repeatable workflows such as `/evaluate`, `/plan`, `/apply`, `/validate`, and `/epav`.
-- `agents/` contains focused review instructions, such as database, deployment, performance, and code review roles.
-- `skills/` contains reusable procedures, including graphify and retrospective workflows.
-- `plugins/` integrates OpenCode with repository tooling, such as automatic graph updates.
-- `checkpoints/` stores temporary session handoff notes when a task is paused or context is compacted.
-
-These files explain how OpenCode should work in this repository; they are not the application’s runtime behavior.
-
-## `.claude/`: Claude Code workflow and tooling
-
-`.claude/` provides the equivalent command and agent instructions for Claude Code. Its commands largely mirror `.opencode/`, so the same E→P→A→V development workflow can be used from either tool.
-
-Tool-specific files may differ slightly, but they should remain consistent with `AGENTS.md`, the architecture documents, and the repository knowledge base.
-
-## `knowledge/`: durable project knowledge
-
-`knowledge/` is the repository’s durable memory: decisions, patterns, lessons, and rules that should survive individual sessions and tool changes.
-
-- `knowledge/rules/` contains standing engineering rules, currently including coding standards.
-- `knowledge/patterns/` records proven implementation patterns and constraints.
-- `knowledge/retros/` records process decisions, discoveries, and lessons from completed work.
-- `knowledge/prompts/` contains reusable prompts for development tasks.
-- Top-level knowledge documents summarize broader project conventions and lessons.
-
-When a workflow discovers a reusable constraint or better practice, it should be documented here rather than left only in an agent command or chat history.
-
 ## Which source to use
 
 Use the sources in this order:
