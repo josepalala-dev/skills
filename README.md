@@ -79,3 +79,9 @@ Use the sources in this order:
 5. Update `knowledge/` when a new durable rule or pattern is discovered.
 
 In short, `AGENTS.md` says how to work in the repository, `.opencode/` and `.claude/` say how a particular coding tool should work, and `knowledge/` preserves the project’s accumulated understanding.
+
+#### Regarding `docs/`
+
+Documentation forms the foundation of AI-assisted development, but allowing developers or AI agents to modify specifications without proper approval creates severe downstream drift. To prevent this, spec files should remain locked down. When ambiguous specs stall progress, developers should surface issues directly—via a call or message—to clarify requirements rather than making unapproved edits.
+
+As developers transition into AI orchestrators, balancing strict spec control with core Agile values—like prioritizing direct collaboration over rigid documentation updates—is critical. In multi-stakeholder projects, maintaining alignment means keeping communication open while ensuring all specification changes go through team lead approval.
