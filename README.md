@@ -1,6 +1,8 @@
-# Learning the EPAV Loop (Evaluate → Plan → Analyze → Validate)
+# Additional Skills Repository 
 
-> **Master AI-native, spec-driven development by combining the EPAV feedback loop with GitHub SpecKit.**
+This repository is designed for Learning the EPAV Loop (Evaluate → Plan → Analyze → Validate)
+
+> **Master AI-native, spec-driven development by combining the EPAV feedback loop with OpenCode .**
 
 This repository serves as a list of practical skills more for developers to learn to transition from traditional "vibe coding" (ad-hoc AI prompting) to **AI-Agile Spec-Driven Development** using the **EPAV Loop**.
 
