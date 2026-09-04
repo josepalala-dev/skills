@@ -77,4 +77,3 @@ The hook would run `graphify . --update` after every `git commit`, keeping the g
 
 To fix: `graphify hook install`
 
-Want me to install it?
