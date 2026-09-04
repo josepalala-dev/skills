@@ -1,9 +1,7 @@
 ---
-
 name: save-session-in-caveman
-description: Capture compact session state and reusable knowledge before switching tasks or ending a session. Write to knowledge/sessions/. Use for fresh-session handoff and durable project memory.
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+description: Capture compact session state before switching tasks or ending a session. Save temporary human-readable session breadcrumbs to knowledge/sessions/ for fresh-session handoff.
+---
 # /save-session-in-caveman
 
 Save the **minimum useful state** needed to resume work later.
